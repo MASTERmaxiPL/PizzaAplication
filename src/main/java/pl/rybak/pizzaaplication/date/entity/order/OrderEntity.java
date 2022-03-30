@@ -44,7 +44,6 @@ public class OrderEntity {
 
     @Column(name = "token")
     private String token;
-
     //1 zamówienie może mieć wiele sizów
     @OneToMany(mappedBy = "order")
     private Set<OrderSizeEntity> orderSizes;

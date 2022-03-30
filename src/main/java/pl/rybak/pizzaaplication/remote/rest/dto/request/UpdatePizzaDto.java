@@ -2,30 +2,31 @@ package pl.rybak.pizzaaplication.remote.rest.dto.request;
 
 import java.util.List;
 
-public class AddPizzaDto {
+public class UpdatePizzaDto {
     private String name;
-    private List<AddSizeDto> addSizes;
+    private List<AddSizeDto> sizes;
 
-    public AddPizzaDto(){
+    public UpdatePizzaDto() {
     }
 
-    public AddPizzaDto(String name, List<AddSizeDto> addSizes) {
+    public UpdatePizzaDto(String name, List<AddSizeDto> sizes) {
         this.name = name;
-        this.addSizes = addSizes;
+        this.sizes = sizes;
     }
 
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
 
     public List<AddSizeDto> getSizes() {
-        return addSizes;
+        return sizes;
     }
 
     public void setSizes(List<AddSizeDto> sizes) {
-        this.addSizes = addSizes;
+        this.sizes = sizes;
     }
 }
